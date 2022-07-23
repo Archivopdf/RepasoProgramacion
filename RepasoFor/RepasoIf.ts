@@ -1,5 +1,5 @@
 // Reto2
-function Continent(pais) {
+export function Continent(pais) {
     pais.toLowerCase()
     if (pais == "españa" || pais == "francia" || pais == "alemania" || pais == "italia" || pais == "austria") {
         console.log("Europe");
@@ -17,7 +17,7 @@ function Continent(pais) {
 }
 
 // Reto9
-function printnumb(number) {
+export function printnumb(number) {
     if (number % 2 == 0) {
         console.log("El numero es par");
     } else {

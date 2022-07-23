@@ -1,5 +1,5 @@
 // Reto3
-function printOdds(number) {
+export function printOdds(number) {
 
     for (let i = 0; i <= number; i++) {
 
@@ -11,7 +11,7 @@ function printOdds(number) {
 }
 
 // Reto5
-function rainbow(arraycolors) {
+export function rainbow(arraycolors) {
     for (let i = 0; i < arraycolors.length; i++) {
         if (arraycolors[i] == "rojo" || arraycolors[i] == "naranja" || arraycolors[i] == "amarillo" || arraycolors[i] == "verde" || arraycolors[i] == "azul" || arraycolors[i] == "añil" || arraycolors[i] == "violeta") {
             console.log(arraycolors[i] + " " + true);
@@ -23,7 +23,7 @@ function rainbow(arraycolors) {
 
 // Reto7
 
-function nameStarts(arrayofnames) {
+export function nameStarts(arrayofnames) {
 
     for (let i = 0; i < arrayofnames.length; i++) {
 
@@ -41,7 +41,7 @@ function nameStarts(arrayofnames) {
 
 // Reto8
 // Comprobar
-function SumCaracters(array1, array2) {
+export function SumCaracters(array1, array2) {
 
     let a = new Array(array1.length);
     for (let i = 0; i < array1.length; i++) {
