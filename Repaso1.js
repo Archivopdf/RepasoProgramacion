@@ -1,32 +1,24 @@
-// Falta reto1
-
-// Reto4
-
-// function invert(array) {
-//     array.reverse()
-// }
-
-// let a = [0, 1, 2, 3, 1, 4]
-// console.log(invert(a))
-
-
-
 // Reto6
-// function returneven(arraynumbers) {
-//     let i = 0;
-//     let a = Boolean;
-//     while (a = true) {
+function returneven(arraynumbers) {
 
-//         if (arraynumbers[i] % 2 == 0) {
+    let i = 0;
+    let a = true;
 
-//             a = true;
-//         } else {
-//             false
-//         }
-//         i = i + 1
-//     }
+    while (i < arraynumbers.length) {
 
-// }
+        if (arraynumbers[i] % 2 == 0) {
+
+            a = false;
+
+            return "Hay un numero par";
+
+        }
+        i = i + 1;
+    }
+    return "No hay un numero par"
+}
+let prueba = [3, 1, 3, 5];
+console.log(returneven(prueba));
 
 
 

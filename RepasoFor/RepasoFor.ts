@@ -10,6 +10,21 @@ export function printOdds(number) {
     }
 }
 
+// Reto4
+
+function invert(array) {
+
+    // return array.reverse()
+
+    let arrayvacio = new Array(array.length);
+
+    for (let i = array.length; i >= 0; i--) {
+
+        arrayvacio[array.length - i] = array[i];
+    }
+    return arrayvacio;
+}
+
 // Reto5
 export function rainbow(arraycolors) {
     for (let i = 0; i < arraycolors.length; i++) {
@@ -40,28 +55,30 @@ export function nameStarts(arrayofnames) {
 }
 
 // Reto8
-// Comprobar
-export function SumCaracters(array1, array2) {
+export function SumCaracters(array1) {
 
-    let a = new Array(array1.length);
+    let sum = 0;
+
     for (let i = 0; i < array1.length; i++) {
-        a[i] = array1[i].length
-    }
-    let Suma = 0;
-    for (let i = 0; i < a.length; i++) {
-        Suma += a[i];
+
+        sum += array1[i].length;
 
     }
 
-    let b = new Array(array2.length);
-    for (let i = 0; i < array2.length; i++) {
-        b[i] = array2[i].length
-    }
-    let Sumb = 0;
-    for (let i = 0; i < b.length; i++) {
-        Sumb += a[i];
+    return sum
+    // let b = new Array(array2.length);
+    // for (let i = 0; i < array2.length; i++) {
+    //     b[i] = array2[i].length
+    // }
+    // let Sumb = 0;
+    // for (let i = 0; i < b.length; i++) {
+    //     Sumb += a[i];
 
-    }
-    let SumTotal = Sumb + Suma
-    return SumTotal
+    // }
+    // let SumTotal = Sumb + Suma
+    // return SumTotal
 }
+
+let a = ["casa", "pedro", "jorge"]
+
+console.log(SumCaracters(a))
