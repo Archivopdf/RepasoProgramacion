@@ -1,5 +1,5 @@
 // Reto6
-function returneven(arraynumbers) {
+export function returneven(arraynumbers) {
 
     let i = 0;
     let a = true;

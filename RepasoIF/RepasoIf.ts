@@ -1,5 +1,5 @@
 // reto1
-function signoZod(month, day) {
+export function signoZod(month, day) {
 
     let signozodiaco = "";
     if (month == "december") {
