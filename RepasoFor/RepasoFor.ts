@@ -12,7 +12,7 @@ export function printOdds(number) {
 
 // Reto4
 
-function invert(array) {
+export function invert(array) {
 
     // return array.reverse()
 
@@ -66,19 +66,4 @@ export function SumCaracters(array1) {
     }
 
     return sum
-    // let b = new Array(array2.length);
-    // for (let i = 0; i < array2.length; i++) {
-    //     b[i] = array2[i].length
-    // }
-    // let Sumb = 0;
-    // for (let i = 0; i < b.length; i++) {
-    //     Sumb += a[i];
-
-    // }
-    // let SumTotal = Sumb + Suma
-    // return SumTotal
 }
-
-let a = ["casa", "pedro", "jorge"]
-
-console.log(SumCaracters(a))
